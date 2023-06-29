@@ -21,7 +21,7 @@ public class Order implements Serializable {
     private Integer orderStatus;
 
     @ManyToOne
-    @JoinColumn(name = "client")
+    @JoinColumn(name = "client") // Na tabela de pedidos no banco de dados vai pegar o id de um cliente
     private User client;
 
     public Order() {
