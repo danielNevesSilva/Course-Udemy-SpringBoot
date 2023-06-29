@@ -9,7 +9,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 @Entity
-@Table(name = "order_table")
+@Table(name = "tb_order")
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -80,6 +80,4 @@ public class Order implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
-
-
 }
